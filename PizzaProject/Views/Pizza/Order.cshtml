@@ -1,0 +1,30 @@
+﻿
+@{
+    ViewBag.Title = "Order";
+}
+
+<h2>Pizza Order Page</h2>
+<!--What kind of Pizza? -->
+<form action="receipt" method="POST">
+    <div>
+        <label>Pizza size?</label>
+        <select name="PizzaSize">
+            <option value="S">Small</option>
+            <option value="M">Medium</option>
+            <option value="L">Large</option>
+        </select>
+    </div>
+    <div>
+        <label>Address:</label>
+        <input type="text" name="OwnerAddress" />
+        </div>
+        <div>
+            <label>Phone Number</label>
+            <input type="text" name="OwnerPhone"  />
+        </div>
+    <div>
+        <input type="submit"  value="OrderPizza"/>
+
+    </div>
+</form>
+
